@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ショッピングサイト</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <!-- 上部ヘッダー -->
+  <header class="top-header">
+  <div class="logo">有<br><span class="logo-sub">--🐜--</span></div>
+    <div class="search-box">
+      <input type="text" placeholder="すべてのアイテムから探す">
+      <select>
+        <option>すべてのカテゴリー</option>
+        <option>トップス</option>
+        <option>ボトムス</option>
+        <option>アウター</option>
+      </select>
+      <a href="./kennsakukekka.html"><button class="search-btn">🔍</button></a>
+    </div>
+    <div class="account-cart">
+      <div class="account">
+        <a href="./touroku.html"><span>ログイン・登録</span><br></a>
+        <strong>マイアカウント ▼</strong>
+      </div>
+      <div class="cart">
+        🛒<span class="cart-count">0</span><br>
+        <strong>カート</strong>
+      </div>
+    </div>
+  </header>
+
+  <!-- 下部ナビゲーション -->
+  <nav class="nav-menu">
+    <ul>
+      <a href="./index.html" class="home"><li>ホーム</li></a>
+      <a href="./botom.html" class="botom"><li>ボトムス</li></a>
+      <a href="./toppus.html" class="toppus"><li>トップス</li></a>
+      <a href="./auta.html" class="auta"><li>アウター</li></a>
+      <a href="./guz.html" class="guz"><li>グッズ</li></a>
+    </ul>
+  </nav>
+
+  <script src="./ARI.js"></script>
+
+   <div class="kcontainer">
+    <h1>検索</h1>
+    <p>検索の結果が見つかりませんでした。</p>
+    <input type="ktext" id="ksearchInput" placeholder="アイテム名または商品番号（LOO）">
+    <button onclick="performSearch()">検索</button>
+    <p id="kresultMessage"></p>
+    <a href="./index.html" class="khome-link">または、ここをクリックしてホームに戻ります</a>
+  </div>
+
+  <script src="./ARI.js"></script>
+</body>
+</html>
+
+  

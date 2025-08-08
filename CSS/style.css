@@ -1,0 +1,412 @@
+@charset "UTF-8";
+   
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  background-color: #1d1b1b;
+  color: white;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.logo1{
+
+    text-decoration: none; 
+}
+
+.logo-sub {
+  font-size: 10px;
+}
+
+.search-box {
+  display: flex;
+  flex: 1;
+  max-width: 700px;
+  margin: 0 20px;
+}
+
+.search-box input,
+.search-box select {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box input {
+  flex: 2;
+}
+
+.search-box select {
+  flex: 1;
+}
+
+.search-btn {
+  background-color: mediumpurple;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.search-btn:hover{
+  color: blueviolet;
+}
+
+.account-cart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.account,
+.cart {
+  text-align: right;
+  font-size: 14px;
+}
+
+.account,
+.touroku {
+  color: #fff;
+  text-decoration: none; 
+}
+
+.cart-count {
+  background: mediumpurple;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+.nav-menu {
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  gap: 20px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  color: #1d1b1b;
+  font-weight: bold;
+}
+
+.home{
+    text-decoration: none; 
+}
+
+.home:hover{
+  color: blueviolet;
+}
+
+.botom{
+    text-decoration: none; 
+}
+
+.auta{
+    text-decoration: none; 
+}
+
+.toppus{
+    text-decoration: none; 
+}
+
+.guz{
+    text-decoration: none; 
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 2em;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.form-container {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.header-image {
+  background: #e94e4e;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.required {
+  background: #e60039;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+input[type="text1"],
+input[type="email1"],
+input[type="tel1"],
+input[type="date1"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-group label {
+  font-weight: normal;
+}
+
+button.submit {
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px;
+  background: #e60039;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.submit:hover {
+  background: #cc0033;
+}
+
+.sale-card{
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: grid;
+  gap: 5px;
+  img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .name{
+    font-size: 14px;
+    }
+  .price{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: right;
+  }
+}
+.sale-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.shop{
+  .container{
+    display: grid;
+  }
+  .layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 60px;
+  }
+  .text{
+    h3{
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 20px;
+      display: flex;
+      align-items: baseline;
+      gap: 1em;
+      span {
+        font-size: 0.6em;
+      }
+    }
+    h2{
+      text-align: center;
+    }
+    dl{
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      dt,dd{
+        font-size: 14px;
+        padding: 10px;
+        border-top: 1px solid#ccc;
+      }
+    }
+  }
+  .map{
+    border-radius: 40px;
+    overflow: hidden;
+    img{
+      width: 600px;
+      height: 400px;
+      aspect-ration: 5 /4;
+    }
+  }
+}
+.contact{
+  text-align: center;
+  background-color: #1d1b1b;
+  color: #fff;
+  .layout{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 60px;
+    margin-inline: auto;
+    max-width: 700px;
+  }
+  .label{
+    margin-bottom: 20px;
+  }
+  .number{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+    img{
+      width: 1em;
+    }
+  }
+  .hour{
+    font-size: 13px;
+    display: block;
+    margin-top: 1em;
+  }
+  .button{
+    display: inline-block;
+    color: #fff;
+    background-color: #6A9631;
+    padding: 1em 2em;
+    border-radius: 8px;
+  }
+}
+
+
+.kcontainer {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flexbox;
+}
+
+
+
+.kcontainer.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#kresultMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.khome-link {
+  display: block;
+  margin-top: 20px;
+  color: #007BFF;
+  text-decoration: none;
+}
+.khome-link:hover {
+  text-decoration: underline;
+}
+

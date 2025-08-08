@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ショッピングサイト</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <!-- 上部ヘッダー -->
+  <header class="top-header">
+  <div class="logo">有<br><span class="logo-sub">--🐜--</span></div>
+    <div class="search-box">
+      <input type="text" placeholder="すべてのアイテムから探す">
+      <select>
+        <option>すべてのカテゴリー</option>
+        <option>トップス</option>
+        <option>ボトムス</option>
+        <option>アウター</option>
+      </select>
+       <a href="./kennsakukekka.html"><button class="search-btn">🔍</button></a>
+    </div>
+    <div class="account-cart">
+      <div class="account">
+        <a href="./touroku.html" class="touroku"><span>ログイン・登録</span><br></a>
+        <strong>マイアカウント ▼</strong>
+      </div>
+      <div class="cart">
+        🛒<span class="cart-count">0</span><br>
+        <strong>カート</strong>
+      </div>
+    </div>
+  </header>
+
+  <!-- 下部ナビゲーション -->
+  <nav class="nav-menu">
+    <ul>
+      <a href="./index.html" class="home"><li>ホーム</li></a>
+      <a href="./botom.html" class="botom"><li>ボトムス</li></a>
+      <a href="./toppus.html" class="toppus"><li>トップス</li></a>
+      <a href="./auta.html" class="auta"><li>アウター</li></a>
+      <a href="./guz.html" class="guz"><li>グッズ</li></a>
+    </ul>
+  </nav>
+
+  
+  <div class="form-container">
+    <div class="header-image">
+      <h1>YOU<br>HERE</h1>
+    </div>
+    <h2>顧客情報登録フォーム</h2>
+   
+    <form>
+      <label>メールアドレス <span class="required">必須</span></label>
+      <input type="email1" placeholder="mail@example.com" required>
+
+      <label>氏名 <span class="required">必須</span></label>
+      <input type="text1" required>
+
+      <label>フリガナ <span class="required">必須</span></label>
+      <input type="text1" required>
+
+      <label>電話番号 <span class="required">必須</span></label>
+      <input type="tel1" required>
+
+      <label>生年月日 <span class="required">必須</span></label>
+      <input type="date1" required>
+
+      <label>性別 <span class="required">必須</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" required> 男性</label>
+        <label><input type="radio" name="gender"> 女性</label>
+        <label><input type="radio" name="gender"> その他</label>
+        <label><input type="radio" name="gender"> 無回答</label>
+      </div>
+
+      <label>お住まいの地域 <span class="required">必須</span></label>
+      <input type="text1" required>
+
+      <button onclick="Location.href='./tourokuOK.html'" class="submit" type="submit">送信</button>
+    </form>
+  </div>
+
+  <section class="mian-secton contact" id="contact">
+    <div class="container">
+      <div class="heading-group">
+        <h2>Contact</h2>
+        <span>お問い合わせ</span>
+      </div>
+      <p>ご不明な点がございましたら、お気軽にお問合せください</p>
+      <div class="layout">
+        <div class="tel">
+          <p class="label"> 電話でお問い合わせ</p>
+          <a href="tel:01-12345678" class="number">
+            <img src="../IMG/" alt="">
+            01-1234-5678
+          </a>
+          <p class="hour">受付時間： 8:00 ~ 20:00（火曜日定休日）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ショッピングサイト</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <!-- 上部ヘッダー -->
+  <header class="top-header">
+    <div class="logo">有<br><span class="logo-sub">--🐜--</span></div>
+    <div class="search-box">
+      <input type="text" placeholder="すべてのアイテムから探す">
+      <select>
+        <option>すべてのカテゴリー</option>
+        <option>トップス</option>
+        <option>ボトムス</option>
+        <option>アウター</option>
+      </select>
+      <a href="./kennsakukekka.html"><button class="search-btn">🔍</button></a>
+    </div>
+    <div class="account-cart">
+      <div class="account">
+        <a href="./touroku.html" class="touroku"><span>ログイン・登録</span><br></a>
+        <strong>マイアカウント ▼</strong>
+      </div>
+      <div class="cart">
+        🛒<span class="cart-count">0</span><br>
+        <strong>カート</strong>
+      </div>
+    </div>
+  </header>
+ <!-- 下部ナビゲーション -->
+  <nav class="nav-menu">
+    <ul>
+      <a href="./index.html" class="home"><li>ホーム</li></a>
+      <a href="./botom.html" class="botom"><li>ボトムス</li></a>
+      <a href="./toppus.html" class="toppus"><li>トップス</li></a>
+      <a href="./auta.html" class="auta"><li>アウター</li></a>
+      <a href="./guz.html" class="guz"><li>グッズ</li></a>
+    </ul>
+  </nav>
+
+  <script src="./ARI.js"></script>
+
+  
+  <section class="home_sale" id="h_sale">
+    <div class="=contaner">
+      <div class="heading-group">
+        <h2>ボトムス</h2>
+        </div>
+        <ul class="sale-list">
+          <li>
+            <div class="sale-card">
+              <img src="./IMG/deni.jpg" alt="シャツ">
+              <p class="name"></p>
+              <p class="price">¥1200</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/kuro.jpg" alt="デニム">
+              <p class="name"></p>
+              <p class="price">¥4500</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/kuro.jpg" alt="デニム">
+              <p class="name"></p>
+              <p class="price">¥4000</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/swet.jpg" alt="スウェット">
+              <p class="name"></p>
+              <p class="price">¥3200</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/harf.png" alt="デニムH">
+              <p class="name"></p>
+              <p class="price">¥2300</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/harf.png" alt="デニムH">
+              <p class="name"></p>
+              <p class="price">¥1200</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/denimu.jpg" alt="デニム">
+              <p class="name"></p>
+              <p class="price">¥3600</p>
+            </div>
+          </li>
+           <li>
+            <div class="sale-card">
+              <img src="./IMG/kuro.jpg" alt="シャツ">
+              <p class="name"></p>
+              <p class="price">¥2100</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mian-secton contact" id="contact">
+    <div class="container">
+      <div class="heading-group">
+        <h2>Contact</h2>
+        <span>お問い合わせ</span>
+      </div>
+      <p>ご不明な点がございましたら、お気軽にお問合せください</p>
+      <div class="layout">
+        <div class="tel">
+          <p class="label"> 電話でお問い合わせ</p>
+          <a href="tel:01-12345678" class="number">
+            <img src="../IMG/" alt="">
+            01-1234-5678
+          </a>
+          <p class="hour">受付時間： 8:00 ~ 20:00（火曜日定休日）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const productNames = [
+    "デニム",
+    "ブラックデニム",
+    "ブラックデニム",
+    "スウェット",
+    "ハーフパンツ",
+    "ハーフパンツ",
+    "デニムU",
+    "クロ（再入荷）"
+  ];
+
+  const nameElements = document.querySelectorAll(".sale-card .name");
+
+  nameElements.forEach((el, index) => {
+    el.textContent = productNames[index] || "商品名未設定";
+  });
+</script>
+</body>
+</html>
